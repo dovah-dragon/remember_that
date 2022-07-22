@@ -1,0 +1,141 @@
+@media (min-width: 768px) {
+    .mobile-menu,.mobile-exit{
+        display: none;
+    }   
+    .navbar .container{
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        justify-content: unset;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: unset;
+        height: unset;
+        width: unset;
+        padding: unset;
+        background: none;
+    }
+    .primary-nav,.secondary-nav{
+        margin: unset;
+        display: flex;
+    }
+    nav li a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 1em;
+        padding: .1em 1em;
+    }
+    .current{
+        font-weight: bold;
+    }
+    .go-premium-cta a{
+        color: var(--primary-color);
+        border: 3px solid var(--primary-color);
+        font-weight: bold;
+        border-radius: 5em;
+        margin-top: -.2em;
+    }
+    .go-premium-cta a:hover{
+        color:white;
+        background-color: var(--primary-color);
+    }
+}
+
+
+@media (min-width:1080px) {
+    .container{
+        width: 1080px;
+        margin: 0 auto;
+    }    
+    section{
+        padding: 10em 4em;
+    }
+    .hero .container{
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .left-col{
+        margin: 3em 3em 0 5em;
+    }
+    .hero-cta{
+        display: flex;
+    }
+    .watch-video-cta{
+        margin: 0 0 0 1em;
+    }
+
+    h1{
+        font-size: 3em;
+        width: 90%;
+    }
+    .hero-img{
+        width: 30%;
+        margin-right: 8em;
+    }
+    .features-list{
+        display: block;
+        margin-left: 5em;
+    }
+    .features-list li{
+        font-size: 1.4em;
+    }
+    .features-list li:before{
+        width: 30px;
+        height: 30px;
+    }
+    .features-section-img{
+        width: 350px;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        bottom: -2em;
+    }
+    .testimonials-section ul{
+        display: flex;
+        column-gap: 1em;
+    }
+    .contact-section{
+        position:relative;
+    }
+    .contact-section .container{
+        display: flex;
+    }
+    .contact-right{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 45%;
+        height: 100%;
+        background-color: rgb(185, 185, 185);
+    }
+    iframe{
+        height: 100%;
+    }
+}
+
+
+@media (min-width:1200px) {
+    .features-section::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -4em;
+        width: 10%;
+        height: 20em;
+        background-color: var(--primary-color);
+        
+    }
+    .features-section::after{
+        content: '';
+        position: absolute;
+        left: 4.5em;
+        top: 0em;
+        width: 200px;
+        height: 20em;
+        background: url(../Images/dots.svg) no-repeat;
+        
+    }
+}
